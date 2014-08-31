@@ -9,6 +9,8 @@ public class LooperImpl implements Looper{
     private long start = 0;
     private long stop = 0;
     
+    
+    
     private Collection<String> collection;
     private Collection<String> collectionForStorage;
     
@@ -29,7 +31,7 @@ public class LooperImpl implements Looper{
         	}
         }
         stop = clock.stopClock();
-        System.out.println(collection.getClass().getName() +"  "+ collectionForStorage.getClass().getName() +" : " + stop + "ms");
+        System.out.println("UserList: " +collection.getClass().getName() +"  Unique list: "+ collectionForStorage.getClass().getName() +" : " + stop + "ms");
 		
 	}
 
